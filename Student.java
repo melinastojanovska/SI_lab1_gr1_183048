@@ -71,4 +71,30 @@ class Student {
 
 
    }
+static class Course
+{
+    List<Student> lista=new ArrayList<>();
+    int poeni;
 
+    public Course(int poeni) {
+        this.poeni =poeni;
+    }
+
+    public Course(List<Student> lista) {
+        this.lista = lista;
+    }
+
+    public boolean daliPolozil()
+    {
+        if(poeni>=51)
+        {
+            return true;
+
+        }
+        else
+        {
+            return false;
+
+        }
+    }
+}
